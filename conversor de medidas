@@ -1,0 +1,39 @@
+/**********************************************************
+- Criar um programa em linguagem c que faça a conversão de M em KM,HM,DAM,DC,DM e MM
+**********************************************************/
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void) 
+{
+float a,x1,x2,x3,x4,x5,x6;
+
+
+//painel de apresentação
+  printf("----BEM VINDO AO CONVERSOR DE MEIDAS!----\n");
+  printf("converta km em M,HM,DAM,DC,DM e MM .\n\n");
+   printf("pressione enter apos digitar a medida em METROS para converter\n\n");
+   printf("digite a medida, utilize '.' ao inves de ','\n");
+  scanf("%f" ,&a);
+//aqui aumenta a medida
+x1=a/10;//m para dam
+x2=a/100;//dam para HM
+x3=a/1000;//hm para km
+//diminui a medida
+x4=a*10;//m para dm
+x5=x4*10;//dm para cm
+x6=x5*10;//cm para mm
+//demontra o resultado
+printf("o valor em km é = %.0f\n", x3);
+printf("o valor em hm é = %.0f\n", x2);
+printf("o valor em dam é = %.0f\n", x1);
+printf("o valor em dm é = %.0f\n", x4);
+printf("o valor em cm é = %.0f\n", x5);
+printf("o valor em mm é = %.0f\n", x6);
+
+
+  printf("programa desenvolvido por Rhanã Tosetto");
+  getchar();
+return 0;
+}
