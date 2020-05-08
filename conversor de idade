@@ -1,0 +1,32 @@
+/**********************************************************
+- Criar um programa em linguagem c que converta sua idade em meses, semanas, dias, horas, minutos e segundos.
+**********************************************************/
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void) 
+{
+float a,b1,b2,b3,b4,b5,b6;
+
+  printf("----BEM VINDO AO CONVERSOR DE IDADE!----\n");
+  printf("converta sua idade em meses, semanas, dias, horas, minutos e segundos.\n\n");
+   printf("pressione enter apos digitar a sua idade para converter\n\n");
+   printf("digite a sua idade\n");
+  scanf("%f" ,&a);
+ b1=a*12;
+  printf("voce tem em meses= %.0f\n" ,b1);
+ b2=a*60;
+  printf("voce tem em semanas= %.0f\n" ,b2);
+ b3=a*365;
+  printf("voce tem em dias= %.0f\n" ,b3);
+ b4=a*8760;
+  printf("voce tem em horas= %.0f\n" ,b4);
+ b5=a*525600;
+  printf("voce tem em minutos= %.0f\n" ,b5);
+ b6=a*31536000;
+ printf("voce tem em segundos= %.0f\n\n\n\n" ,b6);
+  printf("programa desenvolvido por Rhanã Tosetto");
+  getchar();
+return 0;
+}
